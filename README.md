@@ -2,7 +2,7 @@
 
 ### Note: This Project will surely be updated
 
-A simple mobile app to simulate a random choice.
+A simple mobile app to simulate a random choice multiple times.
 
 Randomly picks an item from pre-defined lists which you can setup on your device. 
 
