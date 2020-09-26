@@ -1,12 +1,12 @@
 {
   "appId": "com.Shimrock.FirstTo",
-  "appName": "First To",
+  "appName": "FirstTo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 1
+      "launchShowDuration": 0
     }
   },
   "cordova": {}
