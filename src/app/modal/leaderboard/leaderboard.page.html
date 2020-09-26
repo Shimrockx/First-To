@@ -1,0 +1,22 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button (click)="dismiss()">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  <ion-title>Leaderboard</ion-title>
+</ion-toolbar>
+
+<ion-content>
+  <ion-list class="ion-padding">
+    <ion-item *ngFor="let score of leaderboard; let i = index" [detail]="false">
+      <ion-label class="ion-text-wrap">
+        <ion-text color="primary">
+          <h1>{{ score.label }}</h1>
+          <p class="animate">{{ score.score }}</p>
+        </ion-text>
+      </ion-label>
+      <ion-icon *ngIf="i === 0" name="star" size="large" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

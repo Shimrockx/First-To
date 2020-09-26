@@ -1,12 +1,12 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "first-to",
+  "appId": "com.Shimrock.FirstTo",
+  "appName": "First To",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 1
     }
   },
   "cordova": {}

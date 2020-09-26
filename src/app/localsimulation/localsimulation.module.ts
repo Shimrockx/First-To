@@ -5,11 +5,11 @@ import { RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MessageComponent } from './message.component';
+import { LocalSimulationComponent } from './localsimulation.component';
 
 @NgModule({
   imports: [ CommonModule, FormsModule, IonicModule, RouterModule],
-  declarations: [MessageComponent],
-  exports: [MessageComponent]
+  declarations: [LocalSimulationComponent],
+  exports: [LocalSimulationComponent]
 })
-export class MessageComponentModule {}
+export class LocalSimulationComponentModule {}

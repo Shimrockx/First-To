@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="getBackButtonText()" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button [disabled]="checkSimulateOption()" (click)="saveSimulation()">
+        <ion-icon slot="icon-only" name="save"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>First To</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list class="ion-padding">
+    <ion-label position="stacked">Number of matches</ion-label>
+    <ion-input type="number" placeholder="Enter First To" [(ngModel)]="firstTo"></ion-input>
+
+    <ion-item *ngFor="let option of getOptions(); let i = index" [detail]="false">
+      <ion-input placeholder="Enter Input" [(ngModel)]="this.getOptions()[i].input" (ionChange)="checkInput($event.target.value)"></ion-input>
+      <ion-button *ngIf="checkDeleteOption(i)" fill="outline" slot="end" (click)="deleteOption(i)">Delete</ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-button class="ion-padding" expand="block" (click)="addOption()" [disabled]="checkAddOption()">
+    <ion-icon slot="start" name="add"></ion-icon>
+  </ion-button>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-button expand="block" color="primary" [disabled]="checkSimulateOption()" (click)="simulationOption()">
+      FIRST TO {{ firstTo }} !
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
