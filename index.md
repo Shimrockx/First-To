@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+## First To
 
-You can use the [editor on GitHub](https://github.com/Shimrockx/first-to/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Note: This Project will surely be updated
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A simple mobile app to simulate a random choice.
 
-### Markdown
+Randomly picks an item from pre-defined lists which you can setup on your device. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+It is handy when you need to choose things like what to eat for dinner or who goes first.
 
-```markdown
-Syntax highlighted code block
+Kindly report only issues/bugs here.
 
-# Header 1
-## Header 2
-### Header 3
+### Development environment
 
-- Bulleted
-- List
+* Visual Studio Code
+* Android Studio
+* Ionic / Angular
 
-1. Numbered
-2. List
+### Build
 
-**Bold** and _Italic_ and `Code` text
+**Debug :**
 
-[Link](url) and ![Image](src)
-```
+`ionic serve`
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Web :**
 
-### Jekyll Themes
+`ionic build --prod`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Shimrockx/first-to/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**Android :**
 
-### Support or Contact
+`ionic cap add android`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+`ionic cap copy`
+
+`ionic cap sync`
+
+`ionic cap open android`
+
+**iOS :**
+
+`ionic cap add ios`
+
+`ionic cap copy`
+
+`ionic cap sync`
+
+`ionic cap open ios`
