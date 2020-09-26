@@ -20,7 +20,7 @@ Kindly report only issues/bugs here.
 
 **Debug :**
 
-`ionic server`
+`ionic serve`
 
 **Web :**
 
