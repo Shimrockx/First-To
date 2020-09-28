@@ -8,6 +8,7 @@
           <ion-note>{{ localSimulation.date }}</ion-note>
         </span>
       </h2>
+      <h3 *ngFor="let option of localSimulation.options">{{ option.input }}</h3>
     </ion-label>
   </ion-item>
 
